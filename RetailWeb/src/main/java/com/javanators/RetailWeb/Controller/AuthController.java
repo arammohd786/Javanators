@@ -1,7 +1,11 @@
 package com.javanators.RetailWeb.Controller;
 
 
+import com.javanators.RetailWeb.Dto.AuthResponse;
+import com.javanators.RetailWeb.Dto.LoginRequest;
+import com.javanators.RetailWeb.Dto.RegisterRequest;
 import com.javanators.RetailWeb.Service.AuthService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

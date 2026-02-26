@@ -1,6 +1,7 @@
 package com.javanators.RetailWeb.Controller;
 
 
+import com.javanators.RetailWeb.Dto.CartRequest;
 import com.javanators.RetailWeb.Entity.CartItem;
 import com.javanators.RetailWeb.Entity.User;
 import com.javanators.RetailWeb.Service.CartService;
@@ -30,7 +31,7 @@ public class CartController {
     }
 
     @DeleteMapping("/remove/{itemId}")
-    @Operation(summary = "Remove item from cart")
+//    @Operation(summary = "Remove item from cart")
     public ResponseEntity<Void> removeFromCart(@PathVariable Long itemId) {
         cartService.removeFromCart(itemId);
         return ResponseEntity.noContent().build();

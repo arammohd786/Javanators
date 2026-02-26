@@ -1,5 +1,6 @@
 package com.javanators.RetailWeb.Controller;
 
+import com.javanators.RetailWeb.Dto.ProductRequest;
 import com.javanators.RetailWeb.Entity.Order;
 import com.javanators.RetailWeb.Entity.Product;
 import com.javanators.RetailWeb.Service.OrderService;
